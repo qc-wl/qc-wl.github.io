@@ -1,0 +1,171 @@
+﻿<DOCTYPE HTML>
+<html>
+	<head>
+		<title>倾城网络</title>
+      <link rel="shortcuticon" href="/favicon.ico" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="keywords" content="倾城网络">
+	    <meta name="description" content="倾城网络">
+     	<meta name="apple-mobile-web-app-title" content="倾城网络" />
+		<!--[if lte IE 8]><script src="static/js/html5shiv.js"></script><![endif]-->
+      <link rel="stylesheet" href="static/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+    
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">				
+						<header>
+						
+							<span class="avatar"><img src="http://q4.qlogo.cn/headimg_dl?dst_uin=1092444920&spec=100"></span>
+							<h1>倾城</h1>
+						<p>
+								倾城网络
+						</p>					
+						</header>
+						<footer>
+							<ul class="icons">
+							    
+							    <li><a href="/" target="_blank" class="fa fa-home" title="倾城"></a></li>
+								<li><a href="/" target="_blank" class="fa fa-qq" title="倾城"></a></li><br><br>
+								<h1>旗下网站</h1>
+								<a href="/"><button>倾城</button></a>
+								<a href="/"><button>倾城</button></a>
+																</ul>
+
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; <a href="/">倾城网络</a>.</li>
+						
+						</ul>
+					</footer>
+
+			</div>	<!-- Scripts -->
+			<!--[if lte IE 8]><script src="static/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+      <script src="static/js/jquery.min.js"></script>
+<script src="static/js/su.js"></script>
+<script type="text/javascript">jQuery(document).ready(function($){
+     $('body').wpSuperSnow({
+        flakes: ['static/picture/1.png','static/picture/2.png','static/picture/3.png','static/picture/4.png','static/picture/5.png','static/picture/6.png','static/picture/4.png','static/picture/6.png'],
+        totalFlakes: '290',
+        zIndex: '999999',
+        maxSize: '30',
+        maxDuration: '20',
+        useFlakeTrans: false
+     });
+  });</script>
+        <script>
+
+    !function() {
+        function A(a, b, c) {
+            return a.getAttribute(b) || c
+        }
+        function F(a) {
+            return document.getElementsByTagName(a);
+        }
+        function D() {
+            var c = F("script"),
+                a = c.length,
+                b = c[a - 1];
+            return {
+                l: a,
+                z: A(b, "zIndex", -1),
+                o: A(b, "opacity", 0.5),
+                c: A(b, "color", "0,0,0"),
+                n: A(b, "count", 199)
+            }
+        }
+        function E() {
+            x = i.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            B = i.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        }
+        function M() {
+            J.clearRect(0, 0, x, B);
+            var c = [I].concat(v);
+            var b, d, a, g, e, f;
+            v.forEach(function(h) {
+                h.x += h.xa,
+                    h.y += h.ya,
+                    h.xa *= h.x > x || h.x < 0 ? -1 : 1,
+                    h.ya *= h.y > B || h.y < 0 ? -1 : 1,
+                    J.fillRect(h.x - 0.5, h.y - 0.5, 1, 1);
+                for (d = 0; d < c.length; d++) {
+                    b = c[d];
+                    if (h !== b && null !== b.x && null !== b.y) {
+                        g = h.x - b.x;
+                        e = h.y - b.y;
+                        f = g * g + e * e;
+                        f < b.max && (b === I && f >= b.max / 2 && (h.x -= 0.03 * g, h.y -= 0.03 * e), a = (b.max - f) / b.max, J.beginPath(), J.lineWidth = a / 2, J.strokeStyle = "rgba(" + w.c + "," + (a + 0.2) + ")", J.moveTo(h.x, h.y), J.lineTo(b.x, b.y), J.stroke())
+                    }
+                }
+                c.splice(c.indexOf(h), 1);
+            }),
+                C(M);
+        }
+        var i = document.createElement("canvas"),
+            w = D(),
+            L = "c_n" + w.l, //c_n2
+            J = i.getContext("2d"),
+            x,
+            B,
+            C = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                function(a) {
+                    window.setTimeout(a, 1000 / 45)
+                },
+            N = Math.random,
+            I = {
+                x: null,
+                y: null,
+                max: 20000
+            };
+        i.id = L;
+        i.style.cssText = "position:fixed;top:0;left:0;z-index:" + w.z + ";opacity:" + w.o;
+        F("body")[0].appendChild(i);
+        E();
+        window.onresize = E;
+        window.onmousemove = function(a) {
+            a = a || window.event,
+                I.x = a.clientX,
+                I.y = a.clientY
+        };
+        window.onmouseout = function() {
+            I.x = null,
+                I.y = null
+        };
+        for (var v = [], z = 0; w.n > z; z++) {
+            var G = N() * x,
+                H = N() * B,
+                y = 2 * N() - 1,
+                K = 2 * N() - 1;
+            v.push({
+                x: G,
+                y: H,
+                xa: y,
+                ya: K,
+                max: 6000
+            });
+        }
+        setTimeout(function() {
+            M()
+        }, 100)
+    } ();
+</script>
+	</body>
+</html>
